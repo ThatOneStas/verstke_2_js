@@ -103,6 +103,8 @@ console.log(name,dict)
 delete tempUser.age
 console.log(tempUser)
 
+// next lesson...
+
 // - Func -
 
 
