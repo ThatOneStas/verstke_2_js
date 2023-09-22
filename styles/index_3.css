@@ -1,0 +1,63 @@
+body {
+    margin: 0px;
+}
+
+.formPub {
+    width: 100%;
+    height: 360px;
+    padding: 30px 10% 0px 10%;
+    box-sizing: border-box;
+    background-color: #171717;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formPub_inputBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-bottom: 30px;
+}
+
+.formPub__UserExtra {
+    width: 360px;
+    height: 100px;
+    border: none;
+    border-radius: 6px;
+
+    font-size: 18px;
+
+    margin-bottom: 50px;
+}
+
+.formPub__UserName,.formPub__UserPhone,.formPub__UserMail,.formPub__UserQuantity,.formPub__UserDate,.formPub__UserTime {
+    width: 160px;
+    height: fit-content;
+    border: none;
+    border-radius: 4px;
+
+    font-size: 22px;
+}
+
+.formPub__Sumbit {
+    width: 250px;
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    background-color: #cb5d5d;
+
+    color: white;
+    font-size: 40px;
+    transition: 0.2s;
+}
+
+.formPub__Sumbit:hover {
+    width: 270px;
+    background-color: #ac5454;
+
+    font-size: 44px;
+    transition: 0.2s;
+}
