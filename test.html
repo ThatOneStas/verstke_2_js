@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        /* background-color: black; */
+        margin: 0px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* div {
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(66, 96, 185);
+        border-radius: 50%;
+        -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+        transition: 0.4s;
+    }
+    div:hover {
+        margin-top: 35px;
+        background-color: royalblue;
+        -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+        -webkit-transition: 0.2s linear;
+        transition: 0.4s;
+    } */
+    .tabs {
+      font-size: 0;
+      width: 100%;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tabs>input[type="radio"] {
+      display: none;
+    }
+
+    .tabs>div {
+      /* скрыть контент по умолчанию */
+      width: 100%;
+      height: 100%;
+      display: none;
+      border: 1px solid #e0e0e0;
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+
+    /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+    #tab-btn-1:checked~#content-1,
+    #tab-btn-2:checked~#content-2,
+    #tab-btn-3:checked~#content-3 {
+      display: block;
+    }
+
+    .tabs>label {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      user-select: none;
+      background-color: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      padding: 2px 8px;
+      font-size: 16px;
+      line-height: 1.5;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+      cursor: pointer;
+      position: relative;
+      top: 1px;
+    }
+
+    .tabs>label:not(:first-of-type) {
+      border-left: none;
+    }
+
+    .tabs>input[type="radio"]:checked+label {
+      background-color: #fff;
+      border-bottom: 1px solid #fff;
+    }
+</style>
+<body>
+    <!-- <div style="background-color: aqua;"></div>
+    <div></div>
+    <div  style="background-color: blueviolet;"></div> -->
+
+    <div class="tabs">
+        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+        <label for="tab-btn-1">Вкладка 1</label>
+        <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+        <label for="tab-btn-2">Вкладка 2</label>
+        <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+        <label for="tab-btn-3">Вкладка 3</label>
+    
+        <div id="content-1">
+          Содержимое 1...
+        </div>
+        <div id="content-2">
+          Содержимое 2...
+        </div>
+        <div id="content-3">
+          Содержимое 3...
+        </div>
+      </div>
+</body>
+</html>
